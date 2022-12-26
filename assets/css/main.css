@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: arial,sans-serif;
+}
+
+body {
+    display: flex;
+    width: 80rem;
+    height: 30rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.label {
+    padding: 0.875rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #464C53;
+}
+
+.divResult {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 10rem;
+    height: 1.500rem;
+    border: 1px solid #000;
+    background: #fff;
+}
+
+.pResult {
+    margin-right: 5px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-around;
+    margin-top: .875rem;
+    margin-bottom: .875rem;
+
+}
+
+.btnZero {
+    padding: 0.313rem 1.725rem;
+    background: #72777D;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnAC {
+    padding: 0.313rem 1.625rem;
+    background: #72777D;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnDot {
+    padding: 0.313rem 0.725rem;
+    background: #72777D;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+
+.btnNumber {
+    padding: 0.313rem 0.625rem;
+    background: #72777D;
+    color: #fff;
+    border-radius: 5px;
+    border: none;    cursor: pointer;
+
+}
+
+.btnOpp {
+    background: #FD9E2B;
+    border: none;
+    border-radius: 5px;
+}
