@@ -14,33 +14,33 @@
             <p class="pResult"></p>
         </div>
         <div class="numbers">
-            <button class="btnAC btnClear">AC</button>
+            <button onclick="clearResults()" class="btnAC btnClear">AC</button>
             <!-- <button class="btnNumber btnPlusOrMinus">+/-</button> -->
-            <button class="btnNumber btnPercent">%</button>
-            <button class="btnNumber btnOpp btnDiv">/</button>
+            <button onclick="numero('%')" class="btnNumber btnPercent">%</button>
+            <button onclick="numero('/')" class="btnNumber btnOpp btnDiv">/</button>
         </div>
         <div class="numbers">
             <button onclick="numero('7')" class="btnNumber btnSeven">7</button>
-            <button class="btnNumber btnEight">8</button>
-            <button class="btnNumber btnNine">9</button>
-            <button class="btnNumber btnOpp btnMult">*</button>
+            <button onclick="numero('8')" class="btnNumber btnEight">8</button>
+            <button onclick="numero('9')" class="btnNumber btnNine">9</button>
+            <button onclick="numero('*')" class="btnNumber btnOpp btnMult">*</button>
         </div>
         <div class="numbers">
-            <button class="btnNumber btnFor">4</button>
-            <button class="btnNumber btnFive">5</button>
-            <button class="btnNumber btnSix">6</button>
-            <button class="btnNumber btnOpp btnSub">-</button>
+            <button onclick="numero('4')" class="btnNumber btnFor">4</button>
+            <button onclick="numero('5')" class="btnNumber btnFive">5</button>
+            <button onclick="numero('6')" class="btnNumber btnSix">6</button>
+            <button onclick="numero('-')" class="btnNumber btnOpp btnSub">-</button>
         </div>
         <div class="numbers">
-            <button class="btnNumber btnOne">1</button>
-            <button class="btnNumber btnTwo">2</button>
-            <button class="btnNumber btnThree">3</button>
-            <button class="btnNumber btnOpp btnPlus">+</button>
+            <button onclick="numero('1')" class="btnNumber btnOne">1</button>
+            <button onclick="numero('2')" class="btnNumber btnTwo">2</button>
+            <button onclick="numero('3')" class="btnNumber btnThree">3</button>
+            <button onclick="numero('+')" class="btnNumber btnOpp btnPlus">+</button>
         </div>
         <div class="numbers">
-            <button class="btnZero">0</button>
-            <button class="btnDot">.</button>
-            <button class="btnNumber btnOpp">=</button>
+            <button onclick="numero('0')" class="btnZero">0</button>
+            <button onclick="numero('.')" class="btnDot">.</button>
+            <button onclick="result()" class="btnNumber btnOpp btnOppEqual">=</button>
         </div>
     </div>
     <script src="assets/js/main.js"></script>

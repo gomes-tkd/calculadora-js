@@ -1,11 +1,23 @@
 const pResult = document.querySelector(".pResult");
 const label = document.querySelector(".label");
+const btnEqual = document.querySelector(".btnOppEqual").innerHTML;
+
+console.log(btnEqual.innerHTML);
 
 function numero(num){
     let numero = pResult.innerHTML;
     pResult.innerHTML = numero + num;
-
 }
+
+
+function result() {
+    pResult.innerHTML = eval(pResult.innerHTML);
+}
+
+function clearResults() {
+    pResult.innerHTML = "";
+}
+
 /*
 label.addEventListener("click", (e) => {
     
