@@ -1,19 +1,27 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: arial,sans-serif;
+    font-family: Roboto, arial,sans-serif;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+h4 {
+    margin-top: 3rem;
 }
 
 body {
     display: flex;
-    width: 80rem;
+    width: 90rem;
     height: 30rem;
     flex-direction: column;
     align-items: center;
     justify-content:center;
 }
 
-.label {
+.container {
     padding: 0.875rem;
     border: 1px solid #000;
     border-radius: 5px;
@@ -28,6 +36,9 @@ body {
     height: 1.500rem;
     border: 1px solid #000;
     background: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
 }
 
 .pResult {
@@ -37,14 +48,13 @@ body {
 
 .numbers {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-top: .875rem;
     margin-bottom: .875rem;
-
 }
 
 .btnZero {
-    padding: 0.313rem 1.725rem;
+    padding: 0.313rem 2.05rem;
     background: #72777D;
     color: #fff;
     border-radius: 5px;
@@ -52,12 +62,11 @@ body {
 }
 
 .btnAC {
-    padding: 0.313rem 1.625rem;
+    padding: 0.313rem 3.1rem;
     background: #72777D;
     color: #fff;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
 }
 
 .btnDot {
@@ -66,7 +75,6 @@ body {
     color: #fff;
     border-radius: 5px;
     border: none;
-    cursor: pointer;
 }
 
 .btnNumber {
@@ -74,7 +82,7 @@ body {
     background: #72777D;
     color: #fff;
     border-radius: 5px;
-    border: none;    cursor: pointer;
+    border: none;
 
 }
 
@@ -82,4 +90,11 @@ body {
     background: #FD9E2B;
     border: none;
     border-radius: 5px;
+}
+
+.btnNumber,
+.btnZero,
+.btnAC,
+.btnDot {
+    cursor: pointer;
 }
